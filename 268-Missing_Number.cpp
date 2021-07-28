@@ -1,0 +1,6 @@
+// Using Gauss' Formula
+
+int missingNumber(vector<int>& nums) {
+        int len = nums.size();
+        return len * (len + 1)/2 - accumulate(nums.begin(), nums.end(), 0);
+    }
